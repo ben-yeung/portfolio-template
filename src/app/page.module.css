@@ -1,0 +1,33 @@
+.dark {
+  background-color: var(--darkprimary);
+}
+
+.light {
+  background-color: var(--lightprimary);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+}
