@@ -12,15 +12,13 @@
   --lightsecondary: #ded0b6;
   --lightaccent: #b2a59b;
   --lightcolor: #607274;
-
-  --test: white;
 }
 
 .customBtn {
   border: rgba(0, 0, 0, 0.25) solid 2px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -43,11 +41,21 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--darkprimary));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+[data-theme="dark"] html,
+body {
+  background-color: var(--darkprimary);
+}
+
+[data-theme="light"] html,
+body {
+  background-color: var(--lightprimary);
 }

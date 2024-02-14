@@ -1,6 +1,5 @@
 "use client";
 
-import { ThemeProvider } from "next-themes";
 import styles from "./page.module.css";
 import NavBar from "@/components/NavBar/navbar";
 import { useState, useEffect } from "react";
@@ -19,14 +18,14 @@ export default function Home() {
     console.log(currTheme);
   }, [currTheme]);
 
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <main className={`${styles.main} ${currTheme == "dark" ? styles.dark : styles.light}`}>
-      {mounted ? (
-        <>
-          <NavBar />
-          <div className={styles.hero}>Hello World</div>
-        </>
-      ) : null}
+      <NavBar />
+      <div className={styles.hero}>Hello World</div>
     </main>
   );
 }
