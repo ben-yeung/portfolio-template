@@ -28,6 +28,13 @@
   transform: translate(4px, 4px);
 }
 
+[data-theme="dark"] .customBtn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+[data-theme="light"] .customBtn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

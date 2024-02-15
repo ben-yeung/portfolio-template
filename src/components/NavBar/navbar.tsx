@@ -31,16 +31,13 @@ const NavBar = () => {
           <button className={`${styles.navBtn} customBtn`}>About</button>
         </a>
         <a href="/">
-          <button className={`${styles.navBtn} customBtn`}>Skills</button>
-        </a>
-        <a href="/">
           <button className={`${styles.navBtn} customBtn`}>Projects</button>
         </a>
         <a href="/">
           <button className={`${styles.navBtn} customBtn`}>Contact</button>
         </a>
+        <ModeSwitch />
       </div>
-      <ModeSwitch />
     </div>
   );
 };
