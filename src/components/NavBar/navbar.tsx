@@ -19,8 +19,10 @@ const NavBar = () => {
 
   return (
     <div className={`${styles.mainContainer} ${currTheme == "dark" ? styles.dark : styles.light}`}>
-      <div className={styles.logoContainer}>
-        <img src="/assets/logo.png" className={`${styles.logo} ${currTheme == "light" ? styles.lightlogo : ""}`} alt="" />
+      <div>
+        <a className={styles.logoContainer} href="">
+          <img src="/assets/logo.png" className={`${styles.logo} ${currTheme == "light" ? styles.lightlogo : ""}`} alt="" />
+        </a>
       </div>
 
       <div className={styles.btnContainer}>
