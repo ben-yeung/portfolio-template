@@ -3,42 +3,47 @@
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --darkprimary: #3a506b;
+  --darkprimary: #515751;
   --darksecondary: #0b132b;
   --darkaccent: #1c2541;
   --darkcolor: #5bc0be;
+  --darkfont: #F5F9E9;
 
-  --lightprimary: #faeed1;
+  --lightprimary: #e6e6df;
   --lightsecondary: #ded0b6;
   --lightaccent: #b2a59b;
   --lightcolor: #607274;
+  --lightfont: #515751;
 }
 
 .customBtn {
-  border: rgba(0, 0, 0, 0.25) solid 2px;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
+  border: none;
   padding: 10px 20px 10px 20px;
   background-color: transparent;
   cursor: pointer;
 }
 
-.customBtn:active {
-  box-shadow: none;
-  transform: translate(4px, 4px);
+[data-theme="dark"] .customBtn {
+  border-bottom: 2px solid white;
+}
+[data-theme="light"] .customBtn {
+  border-bottom: 2px solid black;
 }
 
 [data-theme="dark"] .customBtn:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 [data-theme="light"] .customBtn:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
 }
 
 html,
@@ -50,6 +55,7 @@ body {
 body {
   color: rgb(var(--darkprimary));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+ 
 }
 
 a {

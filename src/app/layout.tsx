@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import NextThemeProvider from "@/provider/NextThemeProvider/NextThemeProvider";
 
-const roboto = Roboto({
-  weight: "400",
+
+const roboto = Roboto_Mono({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 

@@ -15,12 +15,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2rem 1.5rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
   color: white;
-  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.7);
   position: fixed;
   z-index: 100;
-
+  background-color: transparent;
   width: 100%;
 }
 
@@ -29,6 +28,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-size: 1em;
 }
 
 .btnContainer > * {
