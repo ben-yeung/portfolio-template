@@ -25,10 +25,10 @@
 }
 
 [data-theme="dark"] .customBtn {
-  border-bottom: 2px solid white;
+  border-bottom: 2.5px solid white;
 }
 [data-theme="light"] .customBtn {
-  border-bottom: 2px solid black;
+  border-bottom: 2.5px solid black;
 }
 
 [data-theme="dark"] .customBtn:hover {

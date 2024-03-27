@@ -16,7 +16,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem 1rem 1rem;
-  color: white;
   position: fixed;
   z-index: 100;
   background-color: transparent;
@@ -30,7 +29,7 @@
   justify-content: center;
   padding: 10px;
   border-radius: 10px;
-  backdrop-filter: blur(80px);
+  backdrop-filter: blur(10px);
   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
   border: 1px solid rgb(0 0 0 / 20%);
 }
