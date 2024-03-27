@@ -3,14 +3,14 @@
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --darkprimary: #515751;
-  --darksecondary: #0b132b;
+  --darkprimary: #18181b;
+  --darksecondary: #2A2A2F;
   --darkaccent: #1c2541;
   --darkcolor: #5bc0be;
   --darkfont: #F5F9E9;
 
-  --lightprimary: #e6e6df;
-  --lightsecondary: #ded0b6;
+  --lightprimary: #D6D5C2;
+  --lightsecondary: #C9C6A6;
   --lightaccent: #b2a59b;
   --lightcolor: #607274;
   --lightfont: #515751;
@@ -21,6 +21,7 @@
   padding: 10px 20px 10px 20px;
   background-color: transparent;
   cursor: pointer;
+  z-index: 10;
 }
 
 [data-theme="dark"] .customBtn {

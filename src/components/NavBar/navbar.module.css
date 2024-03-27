@@ -28,8 +28,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
 }
+
+[data-theme="light"] .btnContainer {
+  background-color: var(--lightsecondary);
+}
+
+
+[data-theme="dark"] .btnContainer {
+  background-color: var(--darksecondary);
+}
+
 
 .btnContainer > * {
   margin: 0 15px 0 15px;
@@ -49,7 +60,7 @@
 .navBtn {
   min-width: 100%;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /* For mobile phones: */

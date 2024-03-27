@@ -2,47 +2,47 @@
 
 import styles from "./page.module.css";
 import NavBar from "@/components/NavBar/navbar";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, MouseEvent } from "react";
 import { useTheme } from "next-themes";
 import Typewriter from "typewriter-effect";
+import useMousePosition from "@/utils/useMousePosition";
+import { motion } from "framer-motion"
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currTheme = theme === "system" ? systemTheme : theme;
   const [mounted, setMounted] = useState(false);
-  const [mousePosition, setCoords] = useState({
-    x: 0,
-    y: 0
-  })
+  const mousePosition = useMousePosition();
 
   var start = 1000;
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  useEffect(() => {
-    console.log(currTheme);
-  }, [currTheme]);
-
   if (!mounted) {
     return null;
   }
 
-  function handleMouseMove(event:any) {
-    const {x, y} = event;
-    setCoords({x: x - 15, y: y - 15});
+  const cursorVariants = {
+    default: {
+      x: mousePosition.x,
+      y: mousePosition.y
+    }
   }
 
-
   return (
-    <main className={`${styles.main} ${currTheme == "dark" ? styles.dark : styles.light}`} onMouseMove={handleMouseMove}>
+    <main className={`${styles["main"]} ${currTheme == "dark" ? styles.dark : styles.light}`}>
+      <div className={styles["overlay"]}></div>
+      <motion.div className={styles["blob"]}
+      style={{left: mousePosition.x, top: mousePosition.y}}
+      ></motion.div>
       <NavBar />
-      <div id="overlay"></div>
-      <div id="blob" style={{ top:`${mousePosition.x}px`, left: `${mousePosition.y}px`}}></div>
+      
       <div className={`${styles["section"]} ${styles["hero"]}`}>
         <div className={styles["hero-intro"]}>
           <div className={styles["hero-first"]}>Hey, I'm</div>
           <div className={styles["hero-last"]}>Benjamin Yeung</div>
+          
           <div className={styles["typewriter"]}>
             <Typewriter
               onInit={(typewriter) => {
@@ -91,7 +91,9 @@ export default function Home() {
           />
         </svg> */}
       </div>
-      {/* <div className={styles["section"]}></div> */}
+      <div className={styles["section"]}>
+        <div>About Me</div>
+      </div>
     </main>
   );
 }
