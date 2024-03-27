@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import NavBar from "@/components/NavBar/navbar";
-import { useState, useEffect, useRef, MouseEvent } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import Typewriter from "typewriter-effect";
 import useMousePosition from "@/utils/useMousePosition";
@@ -23,19 +23,11 @@ export default function Home() {
     return null;
   }
 
-  const cursorVariants = {
-    default: {
-      x: mousePosition.x,
-      y: mousePosition.y
-    }
-  }
 
   return (
     <main className={`${styles["main"]} ${currTheme == "dark" ? styles.dark : styles.light}`}>
       <div className={styles["overlay"]}></div>
-      <motion.div className={styles["blob"]}
-      style={{left: mousePosition.x, top: mousePosition.y}}
-      ></motion.div>
+      <motion.div className={styles["blob"]} style={{left: mousePosition.x, top: mousePosition.y}}></motion.div>
       <NavBar />
       
       <div className={`${styles["section"]} ${styles["hero"]}`}>
