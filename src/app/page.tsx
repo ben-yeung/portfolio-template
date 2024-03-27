@@ -92,7 +92,13 @@ export default function Home() {
         </svg> */}
       </div>
       <div className={styles["section"]}>
-        <div>About Me</div>
+        <h1>About Me</h1>
+      </div>
+      <div className={styles["section"]}>
+        <h1>My Projects</h1>
+      </div>
+      <div className={styles["section"]}>
+        <h1>Contact Me</h1>
       </div>
     </main>
   );
