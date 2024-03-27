@@ -1,5 +1,5 @@
 # portfolio-template WIP
-Next.js React TypeScript utilizing Turborepo
+Next.js React TypeScript FramerMotion utilizing Turborepo
 
 View the portfolio demo here: [Vercel Deployed Link](https://portfolio-template-murex-nu.vercel.app/)
 
