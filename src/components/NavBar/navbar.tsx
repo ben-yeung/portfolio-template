@@ -26,16 +26,16 @@ const NavBar = () => {
       </div>
 
       <div className={styles.btnContainer}>
-        <a href="/">
+        <a href="#">
           <button className={`${styles.navBtn} customBtn`}>Home</button>
         </a>
-        <a href="/">
+        <a href="#about">
           <button className={`${styles.navBtn} customBtn`}>About</button>
         </a>
-        <a href="/">
+        <a href="#projects">
           <button className={`${styles.navBtn} customBtn`}>Projects</button>
         </a>
-        <a href="/">
+        <a href="#contact">
           <button className={`${styles.navBtn} customBtn`}>Contact</button>
         </a>
         <ModeSwitch />

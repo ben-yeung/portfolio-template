@@ -30,16 +30,19 @@
   justify-content: center;
   padding: 10px;
   border-radius: 10px;
+  backdrop-filter: blur(80px);
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+  border: 1px solid rgb(0 0 0 / 20%);
 }
 
-[data-theme="light"] .btnContainer {
+/* [data-theme="light"] .btnContainer {
   background-color: var(--lightsecondary);
 }
 
 
 [data-theme="dark"] .btnContainer {
   background-color: var(--darksecondary);
-}
+} */
 
 
 .btnContainer > * {
