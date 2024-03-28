@@ -1,12 +1,13 @@
 "use client";
 
 import styles from "./page.module.css";
-import NavBar from "@/components/NavBar/navbar";
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
+import NavBar from "@/components/NavBar/navbar";
 import Typewriter from "typewriter-effect";
 import useMousePosition from "@/utils/useMousePosition";
-import { motion } from "framer-motion"
+import StackIcon from "@/components/StackIcon/stackicon";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -23,19 +24,18 @@ export default function Home() {
     return null;
   }
 
-
   return (
     <main className={`${styles["main"]} ${currTheme == "dark" ? styles.dark : styles.light}`}>
       <div className={styles["overlay"]}></div>
-      <motion.div className={styles["blob"]} style={{left: mousePosition.x, top: mousePosition.y}}></motion.div>
+      <motion.div className={styles["blob"]} style={{ left: mousePosition.x, top: mousePosition.y }}></motion.div>
       <NavBar />
-      
+
       <div className={`${styles["section"]} ${styles["hero"]}`}>
         <div className={styles["hero-intro"]}>
-          <div className={styles["hero-first"]}>Hey, I'm</div>
-          <div className={styles["hero-last"]}>Benjamin Yeung</div>
-          
-          <div className={styles["typewriter"]}>
+          <motion.div className={styles["hero-first"]}>Hey, I'm</motion.div>
+          <motion.div className={styles["hero-last"]}>Johnathan Doe</motion.div>
+
+          <motion.div className={styles["typewriter"]}>
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -71,20 +71,40 @@ export default function Home() {
                 loop: true,
               }}
             />
-          </div>
+          </motion.div>
+          <motion.div className={styles["hero-disclaimer"]}>probably listening to lofi.</motion.div>
         </div>
-        {/* <div className={styles["hero-img-container"]}>
-          <img className={styles["hero-img"]} src="/assets/hero.png" alt="" />
-        </div> */}
-        {/* <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className={`${styles["hero-blob-alt"]} ${currTheme == "dark" ? styles["dark-blob-secondary"] : styles["light-blob-secondary"]}`}>
-          <path
-            d="M42.6,-38.2C56.9,-38.7,71.5,-26.9,77.2,-11.2C82.8,4.5,79.5,24.3,67.5,33.4C55.6,42.5,35,41,19.2,42C3.5,43.1,-7.4,46.7,-15.1,43.1C-22.7,39.6,-27.1,28.9,-38.3,18C-49.4,7.1,-67.3,-3.9,-70.4,-16.9C-73.4,-29.8,-61.6,-44.6,-47.5,-44.2C-33.3,-43.8,-16.6,-28,-1.3,-26.5C14.1,-25,28.2,-37.7,42.6,-38.2Z"
-            transform="translate(70 100)"
-          />
-        </svg> */}
       </div>
       <div id="about" className={styles["section"]}>
         <h1>About Me</h1>
+        <div className={styles["about-container"]}>
+          <div className={styles["about-img"]}>
+            <img src="/assets/hero.png" alt="" />
+          </div>
+          <div className={styles["about-info-container"]}>
+            <div className={styles["about-info"]}>
+              <p>
+                I am a <span className={styles["highlight-text"]}>[Your Profession/Field]</span> with a strong passion for <span className={styles["highlight-text"]}>[Your Field]</span>. I graduated from <span className={styles["highlight-text"]}>[Your School]</span> and have accrued over{" "}
+                <span className={styles["highlight-text"]}>[Your YOE]</span> years of experience in the industry.
+              </p>
+              <p>
+                My approach to tackling projects is <span className={styles["highlight-text"]}>[Your Mamba Mentality / Philosophy]</span>, always striving to deliver impactful and innovative solutions.
+              </p>
+              <p>
+                Outside of my professional life, I have a passion for <span className={styles["highlight-text"]}>[Your Interests]</span>, which fuels my creativity and keeps me inspired.
+              </p>
+              <p style={{ textDecoration: "underline" }}>My Stack</p>
+            </div>
+            <div className={styles["about-stack-container"]}>
+              <StackIcon name="Test" iconURL="/assets/logo.png" />
+              <StackIcon name="Test" iconURL="/assets/logo.png" />
+              <StackIcon name="Test" iconURL="/assets/logo.png" />
+              <StackIcon name="Test" iconURL="/assets/logo.png" />
+              <StackIcon name="Test" iconURL="/assets/logo.png" />
+              <StackIcon name="Test" iconURL="/assets/logo.png" />
+            </div>
+          </div>
+        </div>
       </div>
       <div id="projects" className={styles["section"]}>
         <h1>My Projects</h1>
