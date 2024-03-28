@@ -33,7 +33,7 @@ export default function Home() {
       <div className={`${styles["section"]} ${styles["hero"]}`}>
         <div className={styles["hero-intro"]}>
           <motion.div className={styles["hero-first"]}>Hey, I'm</motion.div>
-          <motion.div className={styles["hero-last"]}>Johnathan Doe</motion.div>
+          <motion.div className={styles["hero-last"]}>Benjamin Yeung</motion.div>
 
           <motion.div className={styles["typewriter"]}>
             <Typewriter
@@ -72,7 +72,7 @@ export default function Home() {
               }}
             />
           </motion.div>
-          <motion.div className={styles["hero-disclaimer"]}>probably listening to lofi.</motion.div>
+          <motion.div className={styles["hero-disclaimer"]}>all information and assets are for template purposes</motion.div>
         </div>
       </div>
       <div id="about" className={styles["section"]}>
