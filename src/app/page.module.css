@@ -163,10 +163,17 @@
   gap: 30px;
 }
 
-.about-stack-container > * {
+.stack-container {
+  height: 100%;
   width: 100%;
-  height: 80%;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stack-container > * {
+  width: 100%;
+  height: 60%;
 }
 
 .spotlight-container {
@@ -202,9 +209,12 @@
   }
 
   .about-stack-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
+  .stack-container > * {
+    height: 80%;
+  }
 
   .hero-intro {
     padding: 20px;

@@ -103,13 +103,27 @@ export default function Home() {
               <p style={{ textDecoration: "underline" }}>My Stack</p>
             </div>
             <div className={styles["about-stack-container"]}>
-              <SiTypescript />
-              <SiJavascript />
-              <SiReact />
-              <SiNextdotjs />
-              <SiMongodb />
-              <SiNodedotjs />
-              <SiGraphql />
+              <div className={styles["stack-container"]}>
+                <SiTypescript />
+              </div>
+              <div className={styles["stack-container"]}>
+                <SiJavascript />
+              </div>
+              <div className={styles["stack-container"]}>
+                <SiReact />
+              </div>
+              <div className={styles["stack-container"]}>
+                <SiNextdotjs />
+              </div>
+              <div className={styles["stack-container"]}>
+                <SiMongodb />
+              </div>
+              <div className={styles["stack-container"]}>
+                <SiNodedotjs />
+              </div>
+              <div className={styles["stack-container"]}>
+                <SiGraphql />
+              </div>
             </div>
           </div>
         </div>
