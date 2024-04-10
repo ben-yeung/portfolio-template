@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 import NavBar from "@/components/NavBar/navbar";
 import Typewriter from "typewriter-effect";
 import useMousePosition from "@/utils/useMousePosition";
-import StackIcon from "@/components/StackIcon/stackicon";
+
+import { SiReact, SiMongodb, SiNodedotjs, SiJavascript, SiTypescript, SiSelenium, SiGraphql, SiNextdotjs } from "react-icons/si";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -96,12 +97,13 @@ export default function Home() {
               <p style={{ textDecoration: "underline" }}>My Stack</p>
             </div>
             <div className={styles["about-stack-container"]}>
-              <StackIcon name="Test" iconURL="/assets/logo.png" />
-              <StackIcon name="Test" iconURL="/assets/logo.png" />
-              <StackIcon name="Test" iconURL="/assets/logo.png" />
-              <StackIcon name="Test" iconURL="/assets/logo.png" />
-              <StackIcon name="Test" iconURL="/assets/logo.png" />
-              <StackIcon name="Test" iconURL="/assets/logo.png" />
+              <SiTypescript />
+              <SiJavascript />
+              <SiReact />
+              <SiNextdotjs />
+              <SiMongodb />
+              <SiNodedotjs />
+              <SiGraphql />
             </div>
           </div>
         </div>
