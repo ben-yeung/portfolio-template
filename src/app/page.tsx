@@ -10,6 +10,7 @@ import useMousePosition from "@/utils/useMousePosition";
 
 import { SiReact, SiMongodb, SiNodedotjs, SiJavascript, SiTypescript, SiSelenium, SiGraphql, SiNextdotjs } from "react-icons/si";
 import ProjectSpotlight from "@/components/ProjectSpotlight/spotlight";
+import ContactForm from "@/components/ContactForm/form";
 
 export default function Home() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -92,8 +93,8 @@ export default function Home() {
                 experience in the industry.
               </p>
               <p>
-                d My approach to tackling projects is <span className={styles["highlight-text"]}>[Your Mamba Mentality / Philosophy]</span>, always striving to deliver impactful
-                and innovative solutions.
+                My approach to tackling projects is <span className={styles["highlight-text"]}>[Your Mamba Mentality / Philosophy]</span>, always striving to deliver impactful and
+                innovative solutions.
               </p>
               <p>
                 Outside of my professional life, I have a passion for <span className={styles["highlight-text"]}>[Your Interests]</span>, which fuels my creativity and keeps me
@@ -164,6 +165,9 @@ export default function Home() {
       </div>
       <div id="contact" className={styles["section"]}>
         <h1>Contact Me</h1>
+        <div className={styles["contact-container"]}>
+          <ContactForm />
+        </div>
       </div>
     </main>
   );

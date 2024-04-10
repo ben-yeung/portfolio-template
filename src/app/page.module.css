@@ -118,7 +118,7 @@
   font-size: max(7vw, 3rem);
 }
 
-.about-container {
+.about-container, .projects-container, .contact-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -169,15 +169,6 @@
   padding: 10px;
 }
 
-.projects-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-}
-
 .spotlight-container {
   display: grid;
   height: 100%;
@@ -214,9 +205,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .section > h1 {
-    margin: 0;
-  }
 
   .hero-intro {
     padding: 20px;
