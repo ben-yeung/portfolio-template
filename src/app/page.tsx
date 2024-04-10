@@ -88,17 +88,15 @@ export default function Home() {
             <div className={styles["about-info"]}>
               <p>
                 I am a <span className={styles["highlight-text"]}>[Your Profession/Field]</span> with a strong passion for{" "}
-                <span className={styles["highlight-text"]}>[Your Field]</span>. I graduated from
-                <span className={styles["highlight-text"]}>[Your School]</span> and have accrued over <span className={styles["highlight-text"]}>[Your YOE]</span> years of
-                experience in the industry.
+                <span className={styles["highlight-text"]}>[Your Field]</span>. I graduated from <span className={styles["highlight-text"]}>[Your School]</span> and have accrued
+                over <span className={styles["highlight-text"]}>[Your YOE]</span> years of experience in the industry.
               </p>
               <p>
-                My approach to tackling projects is <span className={styles["highlight-text"]}>[Your Mamba Mentality / Philosophy]</span>, always striving to deliver impactful and
+                My approach to tackling projects is <span className={styles["highlight-text"]}>[Your Mamba Mentality / Philosophy]</span>, always striving to develop impactful and
                 innovative solutions.
               </p>
               <p>
-                Outside of my professional life, I have a passion for <span className={styles["highlight-text"]}>[Your Interests]</span>, which fuels my creativity and keeps me
-                inspired.
+                Outside of programming I really enjoy <span className={styles["highlight-text"]}>[Your Interests]</span>, which fuels my creativity and keeps me inspired.
               </p>
               <p style={{ textDecoration: "underline" }}>My Stack</p>
             </div>
