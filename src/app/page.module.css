@@ -169,6 +169,24 @@
   padding: 10px;
 }
 
+.projects-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.spotlight-container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1300px) {
   .about-stack-container {
@@ -214,10 +232,13 @@
     margin-top: 10px;
     height: 300px;
   }
-
   
   .hero-disclaimer {
     position: relative;
     text-align: center;
+  }
+
+  .spotlight-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
