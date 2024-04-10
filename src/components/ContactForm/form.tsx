@@ -17,7 +17,6 @@ const ContactForm = (props: ComponentProps) => {
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    console.log(e.target.email.value);
     if (e.target.name.value == "" || e.target.email.value == "" || e.target.message.value == "") {
       alert("Field(s) cannot be empty. Please double check!");
       return;
@@ -33,6 +32,9 @@ const ContactForm = (props: ComponentProps) => {
       },
       (error) => {
         console.log(error.text);
+        e.target.name.value = "";
+        e.target.email.value = "";
+        e.target.message.value = "";
       }
     );
   };
