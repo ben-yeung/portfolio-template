@@ -36,7 +36,7 @@ export default function Home() {
       <div className={`${styles["section"]} ${styles["hero"]}`}>
         <div className={styles["hero-intro"]}>
           <motion.div className={styles["hero-first"]}>Hey, I'm</motion.div>
-          <motion.div className={styles["hero-last"]}>Benjamin Yeung</motion.div>
+          <motion.div className={styles["hero-last"]}>[First Last]</motion.div>
 
           <motion.div className={styles["typewriter"]}>
             <Typewriter
@@ -87,13 +87,11 @@ export default function Home() {
           <div className={styles["about-info-container"]}>
             <div className={styles["about-info"]}>
               <p>
-                I am a <span className={styles["highlight-text"]}>[Your Profession/Field]</span> with a strong passion for{" "}
-                <span className={styles["highlight-text"]}>[Your Field]</span>. I graduated from <span className={styles["highlight-text"]}>[Your School]</span> and have accrued
-                over <span className={styles["highlight-text"]}>[Your YOE]</span> years of experience in the industry.
+                I am a <span className={styles["highlight-text"]}>[Your Profession/Field]</span> with a strong passion for <span className={styles["highlight-text"]}>[Your Field]</span>. I graduated from <span className={styles["highlight-text"]}>[Your School]</span> and have accrued over{" "}
+                <span className={styles["highlight-text"]}>[Your YOE]</span> years of experience in the industry.
               </p>
               <p>
-                My approach to tackling projects is <span className={styles["highlight-text"]}>[Your Mamba Mentality / Philosophy]</span>, always striving to develop impactful and
-                innovative solutions.
+                My approach to tackling projects is <span className={styles["highlight-text"]}>[Your Mamba Mentality / Philosophy]</span>, always striving to develop impactful and innovative solutions.
               </p>
               <p>
                 Outside of programming I really enjoy <span className={styles["highlight-text"]}>[Your Interests]</span>, which fuels my creativity and keeps me inspired.
